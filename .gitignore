@@ -57,3 +57,5 @@ mongod.lock # MongoDB lock file
 
 Frontend/node_modules/
 Frontend/.env
+backend/.env
+frontend/.env
