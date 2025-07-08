@@ -22,10 +22,7 @@ app.use(cors())
 app.use('/api/v1/healthcheck', healthcheck); // ✅ Use router
 app.use('/api/food', foodRouter); // API endpoint for food
 app.use('/images',express.static('uploads'))
-<<<<<<< HEAD
 app.use('/api/user',userRouter);
-=======
->>>>>>> 299c093b2ea6ea9647f273872ed7516c3af7285d
 
 //db connection
 connectDB();
