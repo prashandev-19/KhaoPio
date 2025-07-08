@@ -54,3 +54,4 @@ dist/ # Common for other build outputs
 # MongoDB Specific (if running a local dev DB in the project directory)
 data/db/ # If your local MongoDB stores data here
 mongod.lock # MongoDB lock file
+.env
