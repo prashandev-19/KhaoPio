@@ -4,6 +4,7 @@ import dotenv , { configDotenv } from 'dotenv';
 import { healthcheck } from './controllers/healthcheck.controllers.js';
 import connectDB from './config/db.js';
 import foodRouter from './routes/foodRoute.js';
+import userRouter from './routes/userRoute.js';
 
 dotenv.config({
     path:"./.env" 
@@ -21,6 +22,7 @@ app.use(cors())
 app.use('/api/v1/healthcheck', healthcheck); // ✅ Use router
 app.use('/api/food', foodRouter); // API endpoint for food
 app.use('/images',express.static('uploads'))
+app.use('/api/user',userRouter);
 
 //db connection
 connectDB();
