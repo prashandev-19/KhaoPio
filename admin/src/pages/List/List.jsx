@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from 'react'
 import './List.css'
 import axios from "axios"
@@ -57,14 +56,6 @@ const List = () => {
             )
         })}
       </div>
-=======
-import React from 'react'
-import './List.css'
-const List = () => {
-  return (
-    <div>
-      
->>>>>>> 299c093b2ea6ea9647f273872ed7516c3af7285d
     </div>
   )
 }
