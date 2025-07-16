@@ -59,3 +59,4 @@ Frontend/node_modules/
 Frontend/.env
 backend/.env
 frontend/.env
+admin/.env

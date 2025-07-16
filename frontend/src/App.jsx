@@ -6,9 +6,11 @@ import Cart from './pages/Cart/Cart.jsx'
 import Home from './pages/Home/Home.jsx'
 import Footer from './components/Footer/Footer'
 import LoginPopup from './components/LoginPopup/LoginPopup.jsx'
+import Verify from './pages/verify/verify.jsx'
 import { useState } from 'react'
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify'
+import MyOrders from './pages/MyOrders/MyOrders.jsx'
 
 const App = () => {
 
@@ -23,6 +25,8 @@ const App = () => {
         <Route path = '/' element = {<Home/>}/>
         <Route path = '/cart' element = {<Cart/>}/>
         <Route path = '/order' element = {<PlaceOrder/>}/>
+        <Route path = '/verify' element = {<Verify/>}/>
+        <Route path = '/myorders' element = {<MyOrders/>}/>
       </Routes>
     </div>
     <Footer/>
