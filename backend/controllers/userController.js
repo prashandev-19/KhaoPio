@@ -10,7 +10,7 @@ import { response } from "express";
 // login user
 const loginUser = asyncHandler(async(req,res)=>{
     const {email,password} = req.body;
-    try {
+  
         const user = await userModel.findOne({email});
         if(!user){
             throw new ApiError(404,"user not found");
@@ -26,14 +26,6 @@ const loginUser = asyncHandler(async(req,res)=>{
         return res
         .status(200)
         .json(new ApiResponse(200,token,"user logged in"));
-    } catch (error) {
-        console.error(error);
-        const statusCode = error.statusCode || 500;
-        const message = error.message || "Server Error";
-        res
-        .status(statusCode)
-        .json({ success: false, message });
-    }
 })
 
 const createToken =(id)=>{

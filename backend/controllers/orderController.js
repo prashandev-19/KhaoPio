@@ -1,6 +1,6 @@
 import orderModel from "../models/orderModel.js";
 import userModel from "../models/userModel.js";
-import { asyncHandler } from "../utils/asynchandler.js";
+import { asyncHandler } from "../utils/asyncHandler.js";
 import {ApiResponse} from "../utils/ApiResponse.js"
 import Stripe from "stripe"
 import 'dotenv/config';
@@ -12,7 +12,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 //placing user order for frontend
 const placeOrder = asyncHandler(async(req , res) =>{
 
-    const frontend_url = "http://localhost:5174";
+    const frontend_url = "http://localhost:5173";
 
     const newOrder = new orderModel({
         userId: req.userId,
